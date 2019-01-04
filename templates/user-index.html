@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="usr-idx">
+       <div>
+            {{range $u := .}}
+            <div class="usr-tab">
+                <h1><p>Firstname</p><br>{{.Firstname}}</h1>
+                <h1><p>Lastname</p><br>{{.Lastname}}</h1>
+                <h1><p>Username</p><br>{{.Username}}</h1>
+                <h1><p>Password</p><br>{{.Password}}</h1>
+                <h1><p>Role</p><br>{{.Role}}</h1>
+            </div>
+            {{end}}
+        </div>
+    </section>
+</body>
+</html>
